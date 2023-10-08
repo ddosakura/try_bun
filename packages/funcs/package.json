@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "funcs",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "macros": "workspace:*",
+    "typescript": "^5.0.0"
+  }
+}
