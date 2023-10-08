@@ -4,7 +4,11 @@
   "runArgs": [
     "-m=2G"
   ],
-  "postCreateCommand": "corepack enable && npm config set registry http://mirrors.tencent.com/npm/",
+  "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.bun",
+  "mounts": [
+    "source=buncache,target=/home/vscode/.bun"
+    // "type=bind,source=~/ws/buncache,target=/workspaces/try_bun/node_modules/.cache"
+  ],
   "customizations": {
     "vscode": {
       "settings": {
