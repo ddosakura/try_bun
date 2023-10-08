@@ -1,0 +1,16 @@
+{
+  "name": "buntest",
+  "image": "ddosakura/hakke:1.3.0-standard",
+  "runArgs": [
+    "-m=2G"
+  ],
+  "postCreateCommand": "corepack enable && npm config set registry http://mirrors.tencent.com/npm/",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+        "editor.fontLigatures": true
+      }
+    }
+  }
+}
