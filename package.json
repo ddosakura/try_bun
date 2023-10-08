@@ -5,6 +5,9 @@
   ],
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "macros": "bun run packages/funcs/index.ts"
+  },
   "devDependencies": {
     "bun-types": "^1.0.5-canary.20231007T140129"
   },
