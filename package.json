@@ -6,6 +6,7 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
+    "run:deno": "deno run deno/main.ts",
     "macros": "bun run packages/funcs/index.ts"
   },
   "devDependencies": {
