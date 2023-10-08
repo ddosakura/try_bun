@@ -1,1 +1,5 @@
-console.log(Bun.version);
+// https://bun.sh/docs/bundler/macros#import-attributes
+// import { random } from './macros.ts' with { type: 'macro' };
+import { random } from './macros.ts' assert { type: 'macro' };
+
+console.log(Bun.version, `Your random number is ${random()}`);

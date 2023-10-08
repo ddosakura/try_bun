@@ -5,7 +5,7 @@
 - bun
   - [x] https://bun.sh/docs/install/cache
   - [ ] https://bun.sh/docs/install/workspaces
-  - [ ] https://bun.sh/docs/bundler/macros
+  - [x] https://bun.sh/docs/bundler/macros
   - [ ] https://bun.sh/docs/cli/test
   - [ ] https://bun.sh/docs/test/dom
 - deno&jupyter
