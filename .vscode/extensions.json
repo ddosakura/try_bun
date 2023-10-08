@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "ms-toolsai.jupyter",
     "oven.bun-vscode",
     "denoland.vscode-deno",
     "eamodio.gitlens"
