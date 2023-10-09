@@ -4,10 +4,18 @@
   "runArgs": [
     "-m=2G"
   ],
-  "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.bun",
+  "remoteEnv": {
+    "PATH": "/home/vscode/.deno/bin:${containerEnv:PATH}"
+  },
+  "postCreateCommand": {
+    "npm:registry": "npm config set registry http://mirrors.tencent.com/npm/",
+    "npm:corepack": "corepack enable",
+    "deno:cache": "sudo chown -R vscode:vscode /home/vscode/.cache/deno",
+    "bun:cache": "sudo chown -R vscode:vscode /home/vscode/.bun"
+  },
   "mounts": [
+    "source=denocache,target=/home/vscode/.cache/deno",
     "source=buncache,target=/home/vscode/.bun"
-    // "type=bind,source=~/ws/buncache,target=/workspaces/try_bun/node_modules/.cache"
   ],
   "customizations": {
     "vscode": {

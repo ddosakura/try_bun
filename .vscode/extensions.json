@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "windmill-labs.windmill",
     "ms-toolsai.jupyter",
     "oven.bun-vscode",
     "denoland.vscode-deno",

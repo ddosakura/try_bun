@@ -13,6 +13,7 @@
   - [x] simple script
   - [x] https://deno.com/blog/v1.37#jupyter-notebook-integration
   - [x] https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+  - [x] deno cache volume
 
 ```bash
 # deno jupyter --unstable
@@ -28,9 +29,9 @@ jupyter notebook
   - [x] workspaces
 
 ```bash
+# echo "export PATH=\"/home/vscode/.deno/bin:\$PATH\"" >> "/home/vscode/.bashrc"
+# echo "export PATH=\"/home/vscode/.deno/bin:\$PATH\"" >> "/home/vscode/.zshrc"
 deno install --unstable -A https://deno.land/x/wmill/main.ts
-echo "export PATH=\"/home/vscode/.deno/bin:\$PATH\"" >> "/home/vscode/.bashrc"
 echo "source <(wmill completions bash)" >> "/home/vscode/.bashrc"
-echo "export PATH=\"/home/vscode/.deno/bin:\$PATH\"" >> "/home/vscode/.zshrc"
 echo "source <(wmill completions zsh)" >> "/home/vscode/.zshrc"
 ```
