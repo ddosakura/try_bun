@@ -1,5 +1,8 @@
 {
   "recommendations": [
+    "vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "tamasfe.even-better-toml",
     "windmill-labs.windmill",
     "ms-toolsai.jupyter",
     "oven.bun-vscode",
