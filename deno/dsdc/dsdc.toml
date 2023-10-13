@@ -1,0 +1,14 @@
+
+[compose]
+version = 3.8
+
+[[remote]]
+name = "c1"
+repo = "ddosakura/composes"
+
+[[remote]]
+name = "c2"
+repo = "ddosakura/composes"
+
+[store]
+path = "./.cache"
