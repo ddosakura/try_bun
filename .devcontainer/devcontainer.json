@@ -10,10 +10,15 @@
   "postCreateCommand": {
     "npm:registry": "npm config set registry http://mirrors.tencent.com/npm/",
     "npm:corepack": "corepack enable",
+    // "pnpm:cache": "sudo chown -R vscode:vscode /home/vscode/.local/share/pnpm",
+    // "node:cache": "sudo chown -R vscode:vscode /home/vscode/.cache/node",
     "deno:cache": "sudo chown -R vscode:vscode /home/vscode/.cache/deno",
     "bun:cache": "sudo chown -R vscode:vscode /home/vscode/.bun"
   },
   "mounts": [
+    // https://stackoverflow.com/questions/55380443/how-to-create-hard-link-to-file-in-a-docker-volume
+    // "source=pnpmcache,target=/home/vscode/.local/share/pnpm",
+    // "source=nodecache,target=/home/vscode/.cache/node",
     "source=denocache,target=/home/vscode/.cache/deno",
     "source=buncache,target=/home/vscode/.bun"
   ],
